@@ -1,24 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import AddChildComponent from './Component/AddChildComponent';
+import Counter from './Component/Counter';
+import DisplayArray from './Component/DisplayArray';
+import EnableDisableButton from './Component/EnableDisableButton';
+import SearchFilter from './Component/SearchFilter';
+import ShowHideElement from './Component/ShowHideElement';
+import SimpleJSX from './Component/SimpleJSX';
+import SumTwoNumbers from './Component/SumTwoNumbers';
+import TwoWayBinding from './Component/TwoWayBinding';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <SimpleJSX></SimpleJSX>
+    <hr></hr>
+    <DisplayArray></DisplayArray>
+    <hr></hr>
+    <ShowHideElement></ShowHideElement>
+    <hr></hr>
+    <EnableDisableButton/>
+    <hr></hr>
+    <TwoWayBinding></TwoWayBinding>
+    <hr></hr>
+    <AddChildComponent></AddChildComponent>
+    <hr></hr>
+    <SumTwoNumbers></SumTwoNumbers>
+    <hr></hr>
+    <Counter></Counter>
+    <hr></hr>
+    <SearchFilter></SearchFilter>
+    <hr></hr>
+    </>
   );
 }
 
